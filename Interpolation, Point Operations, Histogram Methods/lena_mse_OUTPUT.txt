@@ -1,0 +1,5 @@
+MSE (Nearest Neighbor Scratch): 54.169281005859375
+MSE (Nearest Neighbor OpenCV): 54.169281005859375
+MSE (Bilinear Scratch): 45.78810119628906
+MSE (Bilinear OpenCV): 43.934783935546875
+MSE (Bicubic OpenCV): 44.64044189453125

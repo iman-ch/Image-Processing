@@ -8,12 +8,12 @@ def mse(img1, img2):
     return mse_value
 
 # LOAD IMAGES
-lena = cv2.imread("C:\\Users\\imanc\\Documents\\FALL24\\CP467-ImageProccesing\\A1\\A1_chau0820\\Images\\lena.tif", 0)
-lena_nearest_scratch = cv2.imread("C:\\Users\\imanc\\Documents\\FALL24\\CP467-ImageProccesing\\A1\\A1_chau0820\\lena_nearest_scratch.png", 0)
-lena_nearest_cv = cv2.imread("C:\\Users\\imanc\\Documents\\FALL24\\CP467-ImageProccesing\\A1\\A1_chau0820\\lena_nearest_cv.png", 0)
-lena_bilinear_scratch = cv2.imread("C:\\Users\\imanc\\Documents\\FALL24\\CP467-ImageProccesing\\A1\\A1_chau0820\\lena_bilinear_scratch.png", 0)
-lena_bilinear_cv = cv2.imread("C:\\Users\\imanc\\Documents\\FALL24\\CP467-ImageProccesing\\A1\\A1_chau0820\\lena_bilinear_cv.png", 0)
-lena_bicubic_cv = cv2.imread("C:\\Users\\imanc\\Documents\\FALL24\\CP467-ImageProccesing\\A1\\A1_chau0820\\lena_bicubic_cv.png", 0)
+lena = cv2.imread('Images/lena.tif', cv2.IMREAD_GRAYSCALE)
+lena_nearest_scratch = cv2.imread('lena_nearest_scratch.png', cv2.IMREAD_GRAYSCALE)
+lena_nearest_cv = cv2.imread('lena_nearest_cv.png', cv2.IMREAD_GRAYSCALE)
+lena_bilinear_scratch = cv2.imread('lena_bilinear_scratch.png', cv2.IMREAD_GRAYSCALE)
+lena_bilinear_cv = cv2.imread('lena_bilinear_cv.png', cv2.IMREAD_GRAYSCALE)
+lena_bicubic_cv = cv2.imread('lena_bicubic_cv.png', cv2.IMREAD_GRAYSCALE)
 
 # MSE CALC
 mse_nearest_scratch = mse(lena, lena_nearest_scratch)

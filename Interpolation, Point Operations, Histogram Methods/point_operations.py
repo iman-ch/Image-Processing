@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # LOAD CAMERAMAN IMAGE
-cameraman = cv2.imread("C:\\Users\\imanc\\Documents\\FALL24\\CP467-ImageProccesing\\A1\\A1_chau0820\\Images\\cameraman.tif", 0)
+cameraman = cv2.imread('Images/cameraman.tif', cv2.IMREAD_GRAYSCALE)
 
 # NEGATIVE 
 def negative(img):
@@ -22,7 +22,7 @@ cv2.imwrite(f"cameraman_power.png", cameraman_power)
 
 # BIT-PLANE SLICING
 def bit_plane_slicing(img, bit):
-    bit_image = ((img >> bit) & 1) * (1 << bit)
+    bit_image = ((img >> bit) & 1) * 255
     return bit_image
 
 for bit in range(8):

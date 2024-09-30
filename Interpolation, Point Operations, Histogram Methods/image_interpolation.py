@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # LOAD GRAYSCALE LENA IMAGE
-lena = cv2.imread("C:\\Users\\imanc\\Documents\\FALL24\\CP467-ImageProccesing\\A1\\A1_chau0820\\Images\\lena.tif", 0)
+lena = cv2.imread('Images/lena.tif', cv2.IMREAD_GRAYSCALE)
 h, w = lena.shape[:2]
 
 # NEAREST NEIGHBOUR scratch

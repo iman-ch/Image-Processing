@@ -3,9 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # LOAD IMAGES
-einstein = cv2.imread("C:\\Users\\imanc\\Documents\\FALL24\\CP467-ImageProccesing\\A1\\A1_chau0820\\Images\\einstein.tif", 0)
-chest_xray1 = cv2.imread("C:\\Users\\imanc\\Documents\\FALL24\\CP467-ImageProccesing\\A1\\A1_chau0820\\Images\\chest_x-ray1.jpeg", 0)
-chest_xray2 = cv2.imread("C:\\Users\\imanc\\Documents\\FALL24\\CP467-ImageProccesing\\A1\\A1_chau0820\\Images\\chest_x-ray2.jpeg", 0)
+einstein = cv2.imread('Images/einstein.tif', cv2.IMREAD_GRAYSCALE)
+chest_xray1 = cv2.imread('Images/chest_x-ray1.jpeg', cv2.IMREAD_GRAYSCALE)
+chest_xray2 = cv2.imread('Images/chest_x-ray2.jpeg', cv2.IMREAD_GRAYSCALE)
 
 # HISTOGRAM EQUILIZATION
 einstein_array = np.asarray(einstein)
